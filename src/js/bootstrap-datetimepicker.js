@@ -123,7 +123,7 @@
 
     show: function(e) {
       this.widget.show();
-      this.height = this.component ? this.component.outerHeight() : this.$element.outerHeight();
+      this.height = this.component ? this.component.outerHeight(true) : this.$element.outerHeight(true);
       this.place();
       this.$element.trigger({
         type: 'show',
